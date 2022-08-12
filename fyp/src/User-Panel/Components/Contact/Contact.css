@@ -1,0 +1,198 @@
+.contact-page {
+  padding: 50px;
+}
+.contact-heading {
+  color: rgb(133, 113, 113);
+  margin: 0 0 5% 22%;
+  font-family: verdana;
+  text-align: center;
+  width: 50%;
+}
+.contact-section {
+  width: 100%;
+  background-color: rgb(223, 217, 217);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-section img {
+  margin-left: 10%;
+  transition: all 0.3s;
+}
+.contact-section img:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+.contact-form {
+  padding: 50px;
+  margin: 0 auto;
+  width: 40%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  outline: none;
+  border: none;
+  margin: 0 auto;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  outline-style: solid;
+  outline-color: #7ed957;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  background-color: rgb(211, 206, 206);
+  display: block;
+  width: 80%;
+  background: #e6e6e6;
+  font-family: monospace;
+  font-size: 12pt;
+  line-height: 1.5;
+  color: #666;
+  font-weight: bold;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 20px;
+}
+
+.contact-form textarea {
+  overflow: auto;
+  resize: vertical;
+  height: 100px;
+  padding: 8px 20px;
+}
+
+.contact-form button {
+  text-transform: none;
+  outline: none !important;
+  border: none;
+}
+
+.contact-form .send-mail-btn {
+  min-width: 193px;
+  margin-left: 35%;
+  height: 50px;
+  border-radius: 25px;
+  background: #7ed957;
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding: 0 25px;
+}
+.contact-form .send-mail-btn:hover {
+  background: #333333;
+  color: white;
+}
+
+.contact-form .arrow-right-icon {
+  transition: all 0.4s;
+}
+
+.contact-form .arrow-right-icon:hover {
+  transform: translateX(10px);
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .contact-page {
+    padding: 10px;
+  }
+  .contact-heading {
+    margin: 3% 0 10% 0;
+    width: 100%;
+    font-size: 16pt;
+  }
+  .contact-section img {
+    display: none;
+  }
+  .contact-form {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 90%;
+    font-size: 11pt;
+    padding: 0 15px;
+  }
+
+  .contact-form textarea {
+    height: 80px;
+    width: 90%;
+    padding: 8px 15px;
+  }
+  .contact-form .send-mail-btn {
+    min-width: 0px;
+    height: 40px;
+    font-size: 12px;
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .contact-page {
+    padding: 10px;
+  }
+  .contact-heading {
+    margin: 3% 0 10% 0;
+    width: 100%;
+    font-size: 18pt;
+  }
+  .contact-section img {
+    display: none;
+  }
+  .contact-form {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 90%;
+    font-size: 11pt;
+    padding: 0 15px;
+  }
+
+  .contact-form textarea {
+    height: 80px;
+    width: 90%;
+    padding: 8px 15px;
+  }
+  .contact-form .send-mail-btn {
+    min-width: 0px;
+    height: 40px;
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .contact-page {
+    padding: 20px;
+  }
+  .contact-heading {
+    font-size: 20pt;
+    margin: 0 0 5% 5%;
+    width: 100%;
+  }
+  .contact-section img {
+    width: 30%;
+    height: 300px;
+    margin-left: 5%;
+  }
+  .contact-form {
+    width: 80%;
+  }
+  .contact-form .send-mail-btn {
+    margin-left: 25%;
+  }
+}

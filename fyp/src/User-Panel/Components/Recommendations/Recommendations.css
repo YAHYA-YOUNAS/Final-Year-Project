@@ -1,0 +1,17 @@
+.recommend-hotels {
+  padding: 30px;
+  padding: 40px 50px 40px 50px;
+}
+
+.recommend-section {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 50px 20px;
+}
+.recommend-images img {
+  width: 300px;
+  height: 400px;
+}

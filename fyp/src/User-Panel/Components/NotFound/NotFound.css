@@ -1,0 +1,28 @@
+.not-found-section {
+  color: gray;
+  text-align: center;
+  margin: 3% auto;
+  width: 50%;
+}
+
+.not-found-img {
+  width: 250px;
+  height: 250px;
+}
+
+.not-found-link {
+  font-weight: 500;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .not-found-section {
+    width: 80%;
+  }
+
+  .not-found-img {
+    width: 200px;
+    height: 200px;
+  }
+}

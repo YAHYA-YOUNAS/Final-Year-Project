@@ -1,0 +1,110 @@
+.hotel-information {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.hotel-map {
+  overflow: hidden;
+  margin-top: 35px;
+  width: 400px;
+  height: 350px;
+}
+
+.hotel-display-info {
+  color: grey;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 30px;
+  padding: 5px;
+  width: 65%;
+}
+
+.hotel-display-info p,
+.hotel-display-info h3 {
+  padding-left: 5px;
+  font-size: 13pt;
+}
+
+.hotel-display-info img {
+  border-radius: 5px;
+  margin-left: 5px;
+  width: 750px;
+  height: 400px;
+}
+
+.hotel-display-info .hotel-ratings {
+  position: relative;
+  top: -10px;
+  left: 0;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 350px) and (max-width: 768px) {
+  .customModal {
+    width: 70vw;
+  }
+  .hotel-information {
+    margin-top: 20px;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hotel-map {
+    margin-bottom: 35px;
+    width: 100%;
+  }
+
+  .hotel-display-info {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .hotel-display-info img {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1050px) {
+  .customModal {
+    width: 80vw;
+  }
+  .hotel-information {
+    width: 100%;
+  }
+
+  .hotel-map {
+    width: 90%;
+  }
+
+  .hotel-display-info {
+    margin-left: 0px;
+  }
+  .hotel-display-info img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1350px) {
+  .customModal {
+    width: 85vw;
+  }
+  .hotel-information {
+    width: 100%;
+  }
+
+  .hotel-map {
+    width: 100%;
+  }
+
+  .hotel-display-info {
+    width: 100%;
+  }
+
+  .hotel-display-info img {
+    width: 500px;
+  }
+}

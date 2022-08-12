@@ -1,0 +1,54 @@
+.client-trending-hotels {
+  box-sizing: border-box;
+  width: 80%;
+  float: right;
+  margin: 90px 13px;
+  background: whitesmoke;
+  border-radius: 10px;
+}
+
+.hotel-trending-section {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.trending-section-heading {
+  width: fit-content;
+  font-family: verdana;
+  margin: 5px;
+  padding: 15px 20px;
+  color: rgb(73, 73, 73);
+  background-color: rgb(240, 240, 231);
+  border-radius: 0 0 8px 0;
+  box-shadow: 0px 1px 9px 5px rgba(194, 194, 194, 1);
+  -webkit-box-shadow: 0px 1px 9px 5px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 0px 1px 9px 5px rgba(194, 194, 194, 1);
+}
+
+.no_hotels_title {
+  margin: 0 auto;
+  color: red;
+  font-size: 20px;
+}
+
+/* Media Queries */
+
+/* Small screen tablets */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .client-trending-hotels {
+    width: 65%;
+  }
+
+  .trending-section-heading {
+    font-size: 14px;
+  }
+}
+
+/* Large screen tablets and small screen laptops */
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .client-trending-hotels {
+    width: 72%;
+  }
+}

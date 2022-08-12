@@ -1,0 +1,22 @@
+.feedbacks-section {
+  margin-top: 70px;
+  box-sizing: border-box;
+  width: 82%;
+  float: right;
+}
+
+/* Media Queries */
+
+/* Small screen tablets */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .feedbacks-section {
+    width: 70%;
+  }
+}
+
+/* Large screen tablets and small screen laptops */
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .feedbacks-section {
+    width: 75%;
+  }
+}

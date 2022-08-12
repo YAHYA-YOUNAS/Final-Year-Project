@@ -1,0 +1,23 @@
+.destination-hotels {
+  margin-top: 70px;
+  box-sizing: border-box;
+  width: 82%;
+  float: right;
+  padding: 15px;
+}
+
+/* Media Queries */
+
+/* Small screen tablets */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .destination-hotels {
+    width: 70%;
+  }
+}
+
+/* Large screen tablets and small screen laptops */
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .destination-hotels {
+    width: 75%;
+  }
+}

@@ -1,0 +1,63 @@
+.left-pane {
+  position: fixed;
+  width: 18vw;
+  height: 100%;
+  color: whitesmoke;
+  background: rgb(56, 55, 55);
+}
+
+.panel-title,
+.left-pane h4 {
+  margin-left: 10px;
+}
+
+.admin-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-nav {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 15px;
+  cursor: pointer;
+  margin: 1% 1% 3% 1%;
+}
+
+.admin-navigation .active,
+.admin-nav:hover {
+  border-radius: 5px;
+  color: #000;
+  background: rgb(214, 213, 213);
+}
+
+/* Media Queries */
+
+/* Small screen tablets */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .left-pane {
+    width: 30vw;
+  }
+
+  .admin-nav {
+    padding: 15px 0 15px 15px;
+    font-size: 10pt;
+  }
+}
+
+/* Large screen tablets and small screen laptops */
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .left-pane {
+    width: 25vw;
+  }
+
+  .panel-title,
+  .left-pane h4 {
+    margin-left: 8px;
+  }
+
+  .admin-nav {
+    padding: 15px 0 15px 10px;
+  }
+}

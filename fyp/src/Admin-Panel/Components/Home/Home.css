@@ -1,0 +1,175 @@
+.dashboard-home {
+  margin-top: 65px;
+  float: right;
+  width: 82%;
+  background: whitesmoke;
+}
+
+.content-title {
+  padding: 1px;
+  background: rgb(213, 228, 245);
+  font-style: italic;
+}
+
+.content-title h3,
+.content-title p {
+  margin-left: 10px;
+}
+
+.stats-cards {
+  margin: 10px 0 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats-card {
+  text-align: center;
+  font-weight: 500;
+  border-radius: 5px;
+  background: rgb(240, 240, 231);
+  color: rgb(82, 79, 79);
+  font-family: verdana;
+  width: 20%;
+  padding: 10px;
+  padding-bottom: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+}
+
+.stats-card span {
+  font-weight: 500;
+}
+
+.users-details-section {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.users-details-section h3 {
+  font-family: verdana;
+}
+
+.users-details {
+  border-radius: 5px;
+  background: rgb(240, 240, 231);
+  float: left;
+  width: 30%;
+  padding: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+}
+
+.users-details-chart {
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin-top: 60px;
+  height: 250px;
+}
+
+.users-details-info {
+  margin: 30px 0 0 10px;
+  font-size: 15px;
+  padding: 5px;
+  text-align: justify;
+}
+
+.sections-showcase {
+  border-radius: 5px;
+  background: rgb(240, 240, 231);
+  float: right;
+  width: 62%;
+  padding: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(204, 204, 204, 0.75);
+}
+
+.section-showcase {
+  margin: 30px 0 30px 0;
+}
+.sections-showcase .section-showcase {
+  margin-left: 15px;
+}
+
+.section-details span {
+  margin-left: 25px;
+}
+
+/* Media Queries */
+
+/* Small screen tablets */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .dashboard-home {
+    width: 70%;
+  }
+
+  .stats-card {
+    width: 40%;
+    margin: 20px 20px 0 0;
+  }
+
+  .users-details-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .users-details {
+    width: 90%;
+  }
+
+  .sections-showcase {
+    margin-top: 15px;
+    width: 90%;
+  }
+
+  .section-details span {
+    margin-left: 0;
+    font-size: 11pt;
+  }
+
+  .section-details h4 {
+    font-size: 11pt;
+  }
+}
+
+/* Large screen tablets and small screen laptops */
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .dashboard-home {
+    width: 75%;
+  }
+
+  .stats-card {
+    width: 20%;
+    padding: 8px;
+  }
+
+  .users-details-section {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .users-details {
+    width: 30%;
+    padding: 10px;
+  }
+
+  .users-details-info,
+  .sections-showcase .section-showcase {
+    margin-left: 0;
+    font-size: 15px;
+  }
+
+  .sections-showcase {
+    width: 60%;
+  }
+
+  .section-details span {
+    margin-left: 15px;
+  }
+}

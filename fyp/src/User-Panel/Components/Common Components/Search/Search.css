@@ -1,0 +1,269 @@
+button {
+  cursor: pointer;
+}
+.search-container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(149, 231, 183);
+  padding: 6px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.search-form {
+  width: 100%;
+  padding: 10px 0 10px 15px;
+  border-radius: inherit;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-form input {
+  border: none;
+  background: transparent;
+  outline: none;
+  margin-top: 10px;
+  font-size: 11pt;
+}
+
+.search-form-div {
+  float: left;
+  width: 25%;
+  height: 55px;
+}
+
+.search-form::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.search-form .overlayLine {
+  position: relative;
+  width: 2px;
+  height: 50px;
+  background: #7ed957;
+  right: 7%;
+}
+.search-form label {
+  font-size: 12pt;
+  font-weight: bold;
+}
+.search-button {
+  width: 10%;
+  margin: 0 5px 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: verdana;
+
+  /* Stylish css */
+  background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.1) 0.25em,
+      transparent 0.25em
+    )
+    center/1em 1.2em;
+  text-transform: capitalize;
+  transition: all 1s ease-in-out 0s;
+}
+
+.search-button:hover {
+  background: radial-gradient(
+      circle,
+      rgb(101, 175, 218) 0.25em,
+      transparent 0.25em
+    )
+    center/0.1em 0.1em;
+  box-shadow: 4px 4px rgba(182, 167, 100, 0.2);
+  border-radius: 5px;
+  color: white;
+}
+.travelers {
+  transition-delay: 0s, 0s, 0s, 0s;
+  cursor: pointer;
+}
+.traveler-type {
+  margin-top: 10px;
+}
+.travelers-count {
+  position: absolute;
+  top: 148%;
+  left: 75%;
+  transform: translate(-30%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.travelers-labels {
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.travelers-labels span {
+  padding-top: 5px;
+  font-size: 16px;
+}
+.travelers-buttons {
+  padding-top: 5px;
+  width: 170px;
+}
+.traveler-btn {
+  font-size: 12pt;
+}
+.traveler {
+  padding: 2px;
+  margin-left: 20%;
+  border: none;
+  background: transparent;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 350px) and (max-width: 768px) {
+  .search-container {
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    flex-direction: column;
+    top: 70%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    transform: translate(-60%, -50%);
+  }
+
+  .search-form {
+    padding: 10px 10px 0 10px;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-evenly;
+  }
+
+  .search-form input {
+    font-size: 10pt;
+    width: 95%;
+  }
+
+  .search-form-div {
+    float: none;
+    width: 100%;
+    padding: 10px;
+  }
+  .search-form .overlayLine {
+    width: 100px;
+    height: 3px;
+    right: 0;
+    left: 33%;
+  }
+  .search-form label {
+    font-size: 12pt;
+    font-weight: bold;
+  }
+  .search-button {
+    width: 30%;
+    font-size: 10pt;
+    margin: 10px auto;
+  }
+  .traveler-type {
+    font-size: 10pt;
+  }
+  .travelers-count {
+    width: 100%;
+    top: 95%;
+    left: 30%;
+    background-color: rgb(212, 206, 206);
+  }
+  .travelers-labels span {
+    font-size: 10pt;
+    margin-left: 15px;
+    padding-top: 8px;
+  }
+  .travelers-buttons {
+    margin-left: 10px;
+    width: 120px;
+  }
+  .traveler-btn {
+    font-size: 10pt;
+  }
+  .traveler {
+    font-size: 10pt;
+  }
+}
+/* 
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+  .search-form input {
+    width: 95%;
+    font-size: 11pt;
+  }
+
+  .search-form-div {
+    width: 30%;
+    margin-right: 10px;
+  }
+  .search-form .overlayLine {
+    right: 2%;
+  }
+  .search-button {
+    font-size: 10pt;
+  }
+  .traveler-type {
+    margin-top: 8px;
+    font-size: 10pt;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .travelers-count {
+    left: 70%;
+    width: 225px;
+  }
+  .travelers-labels span {
+    margin-left: 15px;
+    padding-top: 8px;
+  }
+  .travelers-buttons {
+    margin-top: 3px;
+    width: 120px;
+  }
+  .traveler-btn {
+    font-size: 10pt;
+  }
+  .traveler {
+    font-size: 10pt;
+  }
+} */
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .search-container {
+    width: 95%;
+  }
+  .search-form-div {
+    width: 100%;
+  }
+  .search-form .overlayLine {
+    right: 3%;
+  }
+  .traveler-type {
+    font-size: 14px;
+  }
+  .travelers-count {
+    left: 75%;
+    width: 280px;
+  }
+  .travelers-labels span {
+    margin-left: 15px;
+  }
+}

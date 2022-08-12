@@ -1,0 +1,194 @@
+.edit-user {
+  margin-top: 70px;
+  box-sizing: border-box;
+  width: 82%;
+  float: right;
+  padding: 20px;
+}
+
+.edit-user-title {
+  width: fit-content;
+  font-family: verdana;
+  padding: 15px 20px;
+  color: rgb(73, 73, 73);
+  background-color: rgb(240, 240, 231);
+  border-radius: 5px;
+  box-shadow: 0px 1px 9px 5px rgba(194, 194, 194, 1);
+  -webkit-box-shadow: 0px 1px 9px 5px rgba(194, 194, 194, 1);
+  -moz-box-shadow: 0px 1px 9px 5px rgba(194, 194, 194, 1);
+}
+
+.edit-user-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-user-left {
+  flex: 1;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+}
+.user-container {
+  display: flex;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.user-avatar {
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+}
+
+.show-user-name-email {
+  margin: 0 0 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.show-user-name-email span:first-child {
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+.show-user-name-email span:last-child {
+  font-size: 11pt;
+}
+
+.user-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-information h4 {
+  color: gray;
+  padding-left: 10px;
+  font-family: verdana;
+}
+
+.user-info-field {
+  margin-top: 3%;
+  color: gray;
+  font-weight: 500;
+  padding: 0 15px 10px 25px;
+  border-bottom: 1px solid gray;
+}
+
+.user-info-field span {
+  overflow-wrap: break-word;
+  color: black;
+  font-weight: normal;
+}
+
+.edit-user-right {
+  flex: 2;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  margin-left: 20px;
+}
+
+.user-update-form {
+  margin-top: 15px;
+}
+
+.update-user-information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.user-update-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  padding: 5px;
+}
+
+.user-update-item > label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-update-input {
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 30px;
+  font-size: 11pt;
+  margin-top: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.user-update-button {
+  width: 30%;
+  margin: 5% 0 2% 35%;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgb(56, 55, 55);
+  color: white;
+  font-weight: 600;
+}
+
+.user-update-button:hover {
+  background-color: gray;
+}
+
+/* Media Queries */
+
+/* Small screen tablets */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .edit-user {
+    width: 70%;
+  }
+
+  .edit-user-title,
+  .user-information h4,
+  .edit-user-right h3 {
+    font-size: 14px;
+  }
+
+  .edit-user-section {
+    flex-direction: column;
+  }
+
+  .user-avatar {
+    height: 35px;
+    width: 35px;
+  }
+
+  .show-user-name-email span:first-child,
+  .user-information {
+    font-size: 12px;
+  }
+
+  .show-user-name-email span:last-child {
+    font-size: 11px;
+  }
+
+  .edit-user-right {
+    margin: 20px 0 0 0;
+  }
+
+  .user-update-item {
+    margin-top: 20px;
+  }
+
+  .user-update-item > label,
+  .user-update-input {
+    font-size: 13px;
+  }
+}
+
+/* Large screen tablets and small screen laptops */
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .edit-user {
+    width: 75%;
+  }
+}

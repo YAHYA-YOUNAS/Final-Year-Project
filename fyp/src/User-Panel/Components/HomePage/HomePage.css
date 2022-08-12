@@ -1,0 +1,244 @@
+.background-image {
+  width: 100vw;
+  height: 78vh;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+.cities-container {
+  margin-top: 3%;
+  padding: 40px 50px 40px 50px;
+}
+.heading {
+  font-family: verdana;
+  color: #7ed957;
+}
+
+.cities-section {
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cities-images {
+  padding: 5px;
+  border: 3px solid lightgray;
+}
+
+.cities-images a {
+  text-decoration: none;
+}
+
+.cities-images p {
+  margin: 0;
+  font-size: 14pt;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7ed957;
+}
+.cities-images img {
+  width: 300px;
+  height: 250px;
+}
+
+.hotels-container {
+  margin-top: 3%;
+  padding: 40px 50px 40px 50px;
+}
+
+.hotels-section {
+  margin-top: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.hotel-images img {
+  width: 300px;
+  height: 400px;
+}
+.videos-container {
+  margin-top: 3%;
+  padding: 40px 50px 60px 50px;
+}
+
+.videos-section {
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px 0;
+}
+
+.videos {
+  width: 450px;
+  height: 200px;
+}
+.wallpaper {
+  margin-top: 3%;
+  width: 100vw;
+  height: 50vh;
+  opacity: 0.5;
+}
+
+.wallpaper-section {
+  position: relative;
+  text-align: center;
+}
+
+.feedback-section {
+  position: absolute;
+  font-family: verdana;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.feedback-section {
+  color: rgb(100, 53, 57);
+  font-style: italic;
+}
+
+.overlay-loader {
+  width: 100vw;
+  height: 570px;
+  margin: -570px 0 0 0;
+  background: rgba(126, 116, 116, 0.5);
+  overflow: hidden;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+  .cities-container {
+    padding: 0;
+    margin: 0;
+  }
+  .cities-section {
+    padding: 0;
+    justify-content: center;
+  }
+  .heading {
+    padding: 5px;
+    text-align: center;
+    font-size: 14pt;
+    color: rgb(66, 66, 158);
+    background-color: #7ed957;
+    margin-bottom: 10%;
+  }
+  .cities-images {
+    align-self: center;
+  }
+  .cities-images p {
+    font-size: 12pt;
+  }
+  .cities-images img {
+    width: 250px;
+    height: 200px;
+  }
+
+  .hotels-section {
+    justify-content: center;
+  }
+
+  .hotels-container {
+    padding: 40px 0 40px 0;
+  }
+  .hotel-images img {
+    width: 250px;
+    height: 350px;
+  }
+  .videos-section {
+    justify-content: center;
+  }
+  .feedback-section h1,
+  .feedback-section h3 {
+    font-size: 10pt;
+  }
+  .overlay-loader {
+    height: 540px;
+    margin: -600px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .cities-container {
+    padding: 0;
+    margin: 0;
+  }
+  .cities-section {
+    padding: 0px;
+    justify-content: space-evenly;
+  }
+  .heading {
+    padding: 5px;
+    text-align: center;
+    font-size: 18pt;
+    color: rgb(66, 66, 158);
+    background-color: #7ed957;
+    margin-bottom: 10%;
+  }
+  .cities-images {
+    align-self: center;
+  }
+  .cities-images p {
+    font-size: 14pt;
+  }
+  .cities-images img {
+    width: 300px;
+    height: 250px;
+  }
+
+  .hotels-section {
+    justify-content: space-evenly;
+  }
+
+  .hotels-container {
+    padding: 40px 0 40px 0;
+  }
+  .hotel-images img {
+    width: 250px;
+    height: 350px;
+  }
+
+  .videos-section {
+    padding: 0;
+    justify-content: space-evenly;
+  }
+
+  .videos {
+    width: 300px;
+  }
+
+  .feedback-section h1,
+  .feedback-section h3 {
+    font-size: 14pt;
+  }
+
+  .overlay-loader {
+    height: 540px;
+    margin: -600px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  .videos-section {
+    justify-content: space-around;
+    gap: 20px 30px;
+  }
+
+  .videos {
+    width: 400px;
+  }
+
+  .overlay-loader {
+    height: 540px;
+    margin: -535px 0 0 0;
+  }
+}

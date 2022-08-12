@@ -1,0 +1,26 @@
+.privacy-policy {
+  margin: 2% auto;
+  width: 90%;
+  padding: 5px;
+  text-align: justify;
+}
+
+.privacy-policy h1,
+.privacy-policy h2,
+.privacy-policy h3,
+.privacy-policy h4 {
+  font-family: verdana;
+  color: #7ed957;
+}
+
+.privacy-policy p,
+.privacy-policy ul li {
+  font-size: 20px;
+  color: grey;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.privacy-policy span {
+  color: gray;
+  text-decoration: underline;
+}

@@ -1,0 +1,91 @@
+.hotel-background {
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 300px;
+  height: 420px;
+  margin: 2% auto;
+  font-family: verdana;
+}
+
+.hotel-image-section {
+  position: relative;
+  margin: -10% 0 0 6%;
+}
+
+.favorite-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  color: #1abc9c;
+}
+
+.hotel-image {
+  opacity: 0.7;
+  border-radius: 5px;
+  width: 260px;
+  height: 170px;
+}
+
+.hotel-ratings {
+  position: absolute;
+  top: 135px;
+  left: 8px;
+}
+
+.hotel-ratings span {
+  margin-right: 3px;
+  color: orange;
+}
+
+.hotel-short-info {
+  height: 120px;
+  padding: 0 20px 0 20px;
+}
+
+.hotel-short-info span {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+.hotel-facilities-icons {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.view-on-map-btn {
+  text-decoration: none;
+  padding: 5px;
+  font-weight: 700;
+  border: 1px solid #1abc9c;
+  border-radius: 5px;
+  background: transparent;
+  color: #1abc9c;
+  font-size: 10pt;
+}
+
+.view-on-map-btn:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+.hotel-price-tag {
+  padding: 0 10px 0 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-price-tag:last-child span {
+  background-color: orangered;
+  color: white;
+  border-radius: 10%;
+  padding: 2px 5px;
+}
